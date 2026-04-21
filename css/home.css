@@ -390,6 +390,22 @@ html {
     color: #c72a09;
 }
 
+/* FORCE CONSISTENT STYLING ON DATE/TIME INPUTS */
+.booking-form input[type="date"],
+.booking-form input[type="time"] {
+    background: #ffffff !important;
+    color: #c72a09 !important;
+    border: 2px solid #c72a09;
+    border-radius: 8px;
+    font-family: 'Give You Glory', cursive;
+    font-size: 1.3rem;
+    padding: 14px 18px;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* DATE + TIME ROW */
 .booking-row {
     display: flex;
     gap: 12px;
@@ -398,6 +414,27 @@ html {
 
 .booking-row input {
     flex: 1;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 480px) {
+
+    /* Stack date + time cleanly */
+    .booking-row {
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .booking-row input[type="date"],
+    .booking-row input[type="time"] {
+        width: 100%;
+    }
+
+    /* Slightly narrower overall form */
+    .booking-form {
+        max-width: 90%;
+    }
 }
 
 /* BUTTON */
