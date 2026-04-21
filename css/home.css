@@ -189,7 +189,7 @@ html {
 .about-section p {
     max-width: 700px;
     margin: 0 auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'Give You Glory', cursive;
 }
@@ -213,7 +213,7 @@ html {
 .menu-section p {
     max-width: 700px;
     margin: 0 auto 30px auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'Give You Glory', cursive;
     opacity: 0;
@@ -268,7 +268,7 @@ html {
 .gallery-section p {
     max-width: 700px;
     margin: 0 auto 40px auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'Give You Glory', cursive;
 }
@@ -341,7 +341,7 @@ html {
 .booking-section p {
     max-width: 700px;
     margin: 0 auto 20px auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'Give You Glory', cursive;
 }
@@ -468,8 +468,8 @@ html {
 .contact2-section p {
     max-width: 700px;
     margin: 0 auto 30px auto;
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.0;
     font-family: 'Give You Glory', cursive;
     opacity: 0;
     transform: translateX(-60px);
