@@ -390,7 +390,7 @@ html {
     color: #c72a09;
 }
 
-/* FORCE CONSISTENT STYLING ON DATE/TIME INPUTS */
+/* FIX DATE + TIME INPUTS (iOS + Android) */
 .booking-form input[type="date"],
 .booking-form input[type="time"] {
     background: #ffffff !important;
@@ -403,6 +403,7 @@ html {
     width: 100%;
     appearance: none;
     -webkit-appearance: none;
+    text-align: left; /* fixes right-shift bug */
 }
 
 /* DATE + TIME ROW */
