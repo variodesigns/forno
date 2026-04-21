@@ -54,11 +54,17 @@ body {
 }
 
 /* MOBILE NAV FIXES */
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
+
+    /* shrink navbar so hamburger fits inside */
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
 
     /* shrink logo */
     .nav-left img {
-        height: 55px;
+        height: 50px;
         margin-top: 0;
     }
 
@@ -68,30 +74,31 @@ body {
         transform: none;
     }
 
-    /* hide social icons completely on mobile */
+    /* hide social icons */
     .nav-social {
         display: none;
     }
 
-
-    /* hamburger always visible */
+    /* hamburger visible + positioned correctly */
     .hamburger {
         display: block;
         position: absolute;
-        right: 20px;
+        right: 40px; /* moved left so it’s not off-screen */
         top: 50%;
         transform: translateY(-50%);
-        z-index: 3000;
+        font-size: 2.5rem;
+        color: white;
+        z-index: 9999;
     }
 }
 
 /* MOBILE MENU PANEL */
 .mobile-menu {
     position: fixed;
-    top: 90px;
+    top: 70px; /* match new navbar height */
     right: -260px;
     width: 260px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
     background: #c72a09;
     display: flex;
     flex-direction: column;
@@ -99,6 +106,7 @@ body {
     padding-top: 40px;
     gap: 25px;
     transition: right 0.4s ease;
+    z-index: 4000; /* ABOVE hero and navbar */
 }
 
 .mobile-menu a {
@@ -149,15 +157,13 @@ body {
 }
 
 /* MOBILE OVERLAY FIXES */
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .hero-overlay-box {
         width: 70%;
         max-width: 330px;
         padding: 18px 22px;
         top: 38%;
-        left: 50%;
         transform: translate(-50%, -38%);
-        z-index: 1;
     }
 }
 
@@ -177,7 +183,7 @@ body {
 }
 
 /* MOBILE TEXT + LOGO */
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
 
     .hero-slideshow {
         height: 600px;
@@ -189,35 +195,6 @@ body {
     }
 
     .hero-logo {
-        width: 250px;
+        width: 150px;
     }
 }
-
-@media (max-width: 1100px) {
-
-    /* shrink navbar so hamburger fits inside */
-    .navbar {
-        height: 70px;
-        padding: 0 20px;
-    }
-
-    /* shrink logo so it doesn't push everything out */
-    .nav-left img {
-        height: 50px;
-        margin-top: 0;
-    }
-
-    /* hamburger finally fits inside the navbar */
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 2.2rem;
-        color: white;
-        z-index: 9999;
-    }
-}
-
-
