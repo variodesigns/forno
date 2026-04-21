@@ -1,0 +1,176 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    background: #e4e2dd;
+    font-family: 'Give You Glory', cursive;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #c72a09;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    transform: translateX(-60px);
+}
+
+.nav-left img {
+    height: 100px;
+    width: auto;
+    margin-top: 10px;
+}
+
+/* SOCIAL ICONS */
+.nav-social {
+    display: flex;
+    gap: 20px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* DESKTOP MENU */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* HAMBURGER (hidden on desktop) */
+.hamburger {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOBILE MENU PANEL */
+.mobile-menu {
+    position: fixed;
+    top: 90px;
+    right: -260px;
+    width: 260px;
+    height: calc(100vh - 90px);
+    background: #c72a09;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 25px;
+    transition: right 0.4s ease;
+}
+
+.mobile-menu a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-social {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* HERO SLIDESHOW */
+.hero-slideshow {
+    width: 100%;
+    height: 650px; /* adjustable */
+    position: relative;
+    overflow: hidden;
+    margin-top: 90px; /* pushes below nav bar */
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* First slide visible by default */
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* OVERLAY BOX */
+.hero-overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e4e2dd;
+    padding: 30px 80px; /* wider (80px), shorter (30px) */
+    text-align: center;
+    border-radius: 6px;
+    width: 700px; /* makes it wider */
+    height: auto; /* keeps it naturally short */
+}
+
+/* TEXT STYLING */
+.welcome-text,
+.cuisine-text {
+    font-family: 'Give You Glory', cursive;
+    color: #c72a09;
+    font-size: 2.4rem;
+    margin: 10px 0;
+}
+
+/* LOGO INSIDE BOX */
+.hero-logo {
+    width: 250px;
+    margin: 10px 0;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .hero-slideshow {
+        height: 600px;
+    }
+
+    .hero-overlay-box {
+        padding: 25px 35px;
+    }
+
+    .welcome-text,
+    .cuisine-text {
+        font-size: 1.8rem;
+    }
+
+    .hero-logo {
+        width: 150px;
+    }
+}
+
