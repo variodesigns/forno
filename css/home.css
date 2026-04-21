@@ -52,7 +52,7 @@ body {
     cursor: pointer;
     display: block;
     position: absolute;
-    right: 10px;
+    right: 40px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 9999;
