@@ -55,30 +55,12 @@
 </div>
 
 
-<!-- Main Content Area -->
-    <div class="page-background">
-
-        <div class="container">
-            <h2><center>Register for your account</center></h2>
-
-            <form action="register_process.php" method="POST">
-                <label>Name:</label>
-                <input type="text" name="name" required>
-
-                <label>Email:</label>
-                <input type="email" name="email" required>
-
-                <label>Password:</label>
-                <input type="password" name="password" required>
-
-                <button type="submit">Create Account</button>
-                <br>
-                <a href="login.php" class="secondary-button">Already Registered? Login</a>
-
-            </form>
-        </div>
-
-    </div>
+<!-- ================= PAGE CONTENT PLACEHOLDER ================= -->
+<section class="page-content">
+    <h2>Page Title</h2>
+    <p>This is your placeholder content. Replace this section with whatever you want for your new page.</p>
+</section>
+<!-- ============================================================ -->
 
 
 <!-- ================= FOOTER ================= -->
@@ -140,13 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", handleScroll);
 });
 </script>
-
-<script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./service-worker.js");
-}
-</script>
-
 
 </body>
 </html>
