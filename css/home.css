@@ -256,10 +256,15 @@ html {
 }
 
 /* MENU SECTION ANIMATION (HIDDEN STATE) */
-.menu-section h2,
+.menu-section h2 {
+    opacity: 0;
+    transform: translateX(60px); /* match slideInRight */
+    transition: all 0.8s ease;
+}
+
 .menu-section p {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-60px); /* match slideInLeft */
     transition: all 0.8s ease;
 }
 
