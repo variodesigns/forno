@@ -59,6 +59,15 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 700px) {
+    .hamburger {
+        position: relative;
+        z-index: 2000;
+        margin-right: 10px;
+    }
+}
+
+
 /* MOBILE MENU PANEL */
 .mobile-menu {
     position: fixed;
@@ -138,6 +147,17 @@ body {
     width: 700px; /* makes it wider */
     height: auto; /* keeps it naturally short */
 }
+
+@media (max-width: 700px) {
+    .hero-overlay-box {
+        width: 80%;
+        max-width: 350px;
+        padding: 20px 25px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
 
 /* TEXT STYLING */
 .welcome-text,
