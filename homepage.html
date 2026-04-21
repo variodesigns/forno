@@ -37,8 +37,8 @@
     <div class="mobile-menu">
         <a href="#">Home</a>
         <a href="#about">About Us</a>
-        <a href="#">Menu</a>
-        <a href="#">Gallery</a>
+        <a href="#menus">Menu</a>
+        <a href="#gallery">Gallery</a>
         <a href="#">Contact Us</a>
     </div>
 
@@ -75,7 +75,57 @@
     </div>
 </section>
 
+    <section class="gallery-section" id="gallery">
+    <h2>Gallery</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <div class="gallery-wrapper">
+        <div class="gallery-arrow left">&#10094;</div>
+
+        <div class="gallery-track">
+            <img src="images/gallery1.jpg" alt="">
+            <img src="images/gallery2.jpg" alt="">
+            <img src="images/gallery3.jpg" alt="">
+            <img src="images/gallery4.jpg" alt="">
+            <img src="images/gallery5.jpg" alt="">
+            <img src="images/gallery6.jpg" alt="">
+        </div>
+
+        <div class="gallery-arrow right">&#10095;</div>
+    </div>
+</section>
+
+
 
     <script src="js/home.js"></script>
+
+<script>
+    const track = document.querySelector('.gallery-track');
+    const leftArrow = document.querySelector('.gallery-arrow.left');
+    const rightArrow = document.querySelector('.gallery-arrow.right');
+
+    let scrollAmount = 0;
+
+    // Amount to scroll each click (adjust if needed)
+    const scrollStep = 300;
+
+    rightArrow.addEventListener('click', () => {
+        track.scrollBy({
+            left: scrollStep,
+            behavior: 'smooth'
+        });
+    });
+
+    leftArrow.addEventListener('click', () => {
+        track.scrollBy({
+            left: -scrollStep,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
 </body>
 </html>
