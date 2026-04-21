@@ -482,6 +482,7 @@ html {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    align-items: center; /* CENTRES THE BUTTON */
 }
 
 .contact2-form input,
@@ -514,6 +515,7 @@ html {
     transition: 0.3s ease;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .contact2-btn:hover {
@@ -532,7 +534,7 @@ html {
 
 .forno-footer p {
     margin: 8px 0;
-    font-size: 1.3rem;
+    font-size: 0.5rem;
 }
 
 .vario-footer-logo {
