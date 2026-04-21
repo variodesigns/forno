@@ -127,5 +127,30 @@
     });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    function handleScroll() {
+        const triggerPoint = window.innerHeight * 0.85;
+
+        const menuHeader = document.querySelector(".menu-section h2");
+        const menuParagraph = document.querySelector(".menu-section p");
+
+        [menuHeader, menuParagraph].forEach((el) => {
+            if (!el.classList.contains("visible")) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < triggerPoint) {
+                    el.classList.add("visible");
+                }
+            }
+        });
+    }
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+});
+</script>
+
+
 </body>
 </html>
