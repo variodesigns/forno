@@ -388,9 +388,10 @@ html {
     font-size: 1.3rem;
     outline: none;
     color: #c72a09;
+    box-sizing: border-box; /* IMPORTANT: ensures perfect alignment */
 }
 
-/* DATE + TIME ROW (now simple text inputs) */
+/* DATE + TIME ROW */
 .booking-row {
     display: flex;
     gap: 12px;
@@ -399,6 +400,8 @@ html {
 
 .booking-row input {
     flex: 1;
+    width: 100%; /* ensures identical width to other inputs */
+    box-sizing: border-box;
 }
 
 /* MOBILE FIXES */
