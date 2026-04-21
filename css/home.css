@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     display: block;
     position: absolute;
-    right: 20px; /* was 40px */
+    right: 65px; /* was 40px */
     top: 50%;
     transform: translateY(-50%);
     z-index: 9999;
@@ -75,7 +75,7 @@ body {
     }
 
    .hamburger {
-    right: 15px; /* was 25px */
+    right: 40px;
     font-size: 2.2rem;
 }
 
