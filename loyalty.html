@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORNO | Page Title</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/home.css?v=2">
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#c72a09">
+    <meta name="msapplication-TileColor" content="#c72a09">
+    <meta name="theme-color" content="#c72a09">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <!-- LEFT: SOCIAL ICONS -->
+    <div class="nav-social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+    </div>
+
+    <!-- CENTER: LOYALTY BUTTON -->
+    <div class="nav-center">
+        <a href="/loyalty.html" class="loyalty-btn">Get our loyalty app</a>
+    </div>
+
+    <!-- RIGHT: HAMBURGER -->
+    <div class="hamburger">☰</div>
+
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="menus.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Reservations</a>
+    <a href="contact.html">Contact Us</a>
+</div>
+
+
+<!-- ================= PAGE CONTENT PLACEHOLDER ================= -->
+<section class="page-content">
+    <h2>Page Title</h2>
+    <p>This is your placeholder content. Replace this section with whatever you want for your new page.</p>
+</section>
+<!-- ============================================================ -->
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="forno-footer">
+    <p>Forno, 123 Main Street, London, N8 7RF</p>
+    <p>Telephone: 0207 1234567</p>
+    <p>Email: hello@fornorestaurant.co.uk</p>
+
+    <p>© Copyright of Forno Restaurant</p>
+    <p>Site Designed and Managed by Vario Designs</p>
+
+    <a href="https://www.variodesigns.co.uk" target="_blank" rel="noopener">
+        <img src="images/variologo.png" alt="Vario Designs Logo" class="vario-footer-logo">
+    </a>
+</footer>
+
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/home.js"></script>
+
+<script>
+    // Gallery arrows (kept for consistency, safe if unused)
+    const track = document.querySelector('.gallery-track');
+    const leftArrow = document.querySelector('.gallery-arrow.left');
+    const rightArrow = document.querySelector('.gallery-arrow.right');
+
+    if (track && leftArrow && rightArrow) {
+        const scrollStep = 300;
+
+        rightArrow.addEventListener('click', () => {
+            track.scrollBy({ left: scrollStep, behavior: 'smooth' });
+        });
+
+        leftArrow.addEventListener('click', () => {
+            track.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+        });
+    }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    function handleScroll() {
+        const triggerPoint = window.innerHeight * 0.85;
+
+        const targets = document.querySelectorAll(".menu-section h2, .menu-section p, .contact2-section h2, .contact2-section p");
+
+        targets.forEach((el) => {
+            if (el && !el.classList.contains("visible")) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < triggerPoint) {
+                    el.classList.add("visible");
+                }
+            }
+        });
+    }
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+});
+</script>
+
+</body>
+</html>
