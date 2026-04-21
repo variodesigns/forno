@@ -184,34 +184,41 @@ body {
 
 @media (max-width: 700px) {
 
-    /* shrink the logo so it doesn't push everything off-screen */
+    /* shrink logo */
     .nav-left img {
-        height: 60px;
+        height: 55px;
         margin-top: 0;
-    }
-
-    /* remove the desktop shift that breaks mobile */
-    .nav-links {
-        transform: none;
-    }
-
-    /* ensure hamburger is visible */
-    .hamburger {
-        display: block;
-        position: relative;
-        z-index: 3000;
-        margin-right: 10px;
-    }
-
-    /* keep social icons centred */
-    .nav-social {
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     /* hide desktop links */
     .nav-links {
         display: none;
+        transform: none;
+    }
+
+    /* hamburger always visible */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3000;
+    }
+
+    /* social icons move BELOW the navbar */
+    .nav-social {
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* increase navbar height to make room */
+    .navbar {
+        height: 120px;
     }
 }
 
