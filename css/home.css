@@ -16,7 +16,7 @@ body {
     padding: 0 30px;
     position: fixed;
     top: 0;
-    z-index: 3000; /* ensure navbar is above hero */
+    z-index: 3000;
 }
 
 .nav-left img {
@@ -37,7 +37,7 @@ body {
     text-decoration: none;
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL ICONS (desktop only) */
 .nav-social {
     display: flex;
     gap: 20px;
@@ -54,23 +54,33 @@ body {
 }
 
 /* MOBILE NAV FIXES */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
+    /* shrink logo */
+    .nav-left img {
+        height: 55px;
+        margin-top: 0;
+    }
+
+    /* hide desktop links */
     .nav-links {
+        display: none;
+        transform: none;
+    }
+
+    /* hide social icons completely on mobile */
+    .nav-social {
         display: none;
     }
 
+    /* hamburger always visible */
     .hamburger {
         display: block;
-        position: relative;
-        z-index: 3000; /* ABOVE EVERYTHING */
-        margin-right: 10px;
-    }
-
-    .nav-social {
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3000;
     }
 }
 
@@ -103,7 +113,7 @@ body {
     position: relative;
     overflow: hidden;
     margin-top: 90px;
-    z-index: 0; /* ensure hero stays behind navbar */
+    z-index: 0;
 }
 
 .hero-slide {
@@ -134,7 +144,7 @@ body {
     border-radius: 6px;
     width: 700px;
     height: auto;
-    z-index: 1; /* below navbar */
+    z-index: 1;
 }
 
 /* MOBILE OVERLAY FIXES */
@@ -143,7 +153,7 @@ body {
         width: 70%;
         max-width: 330px;
         padding: 18px 22px;
-        top: 38%; /* moved up */
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -38%);
         z-index: 1;
@@ -181,44 +191,3 @@ body {
         width: 150px;
     }
 }
-
-@media (max-width: 700px) {
-
-    /* shrink logo */
-    .nav-left img {
-        height: 55px;
-        margin-top: 0;
-    }
-
-    /* hide desktop links */
-    .nav-links {
-        display: none;
-        transform: none;
-    }
-
-    /* hamburger always visible */
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 3000;
-    }
-
-    /* social icons move BELOW the navbar */
-    .nav-social {
-        position: absolute;
-        bottom: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* increase navbar height to make room */
-    .navbar {
-        height: 120px;
-    }
-}
-
