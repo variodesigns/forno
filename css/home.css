@@ -390,38 +390,7 @@ html {
     color: #c72a09;
 }
 
-/* FIX DATE + TIME INPUTS ON iOS */
-.booking-form input[type="date"],
-.booking-form input[type="time"] {
-    background-color: #ffffff !important;
-    color: #c72a09 !important;
-    border: 2px solid #c72a09;
-    border-radius: 8px;
-    font-family: 'Give You Glory', cursive;
-    font-size: 1.3rem;
-    padding: 14px 18px;
-    width: 100%;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-align: left;
-    text-indent: 0; /* stops right-shift bug */
-}
-
-/* FORCE PLACEHOLDER TEXT TO SHOW ON iOS */
-.booking-form input[type="date"]::placeholder,
-.booking-form input[type="time"]::placeholder {
-    color: #c72a09 !important;
-    opacity: 1 !important;
-}
-
-/* FORCE VALUE TEXT TO SHOW ON iOS */
-.booking-form input[type="date"]:not(:placeholder-shown),
-.booking-form input[type="time"]:not(:placeholder-shown) {
-    color: #c72a09 !important;
-}
-
-/* DATE + TIME ROW */
+/* DATE + TIME ROW (now simple text inputs) */
 .booking-row {
     display: flex;
     gap: 12px;
@@ -438,11 +407,6 @@ html {
     .booking-row {
         flex-direction: column;
         gap: 18px;
-        width: 100%;
-    }
-
-    .booking-row input[type="date"],
-    .booking-row input[type="time"] {
         width: 100%;
     }
 
@@ -597,3 +561,5 @@ html {
     width: auto;
     margin-top: 15px;
 }
+
+
