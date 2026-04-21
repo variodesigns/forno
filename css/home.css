@@ -73,6 +73,7 @@ body {
         display: none;
     }
 
+
     /* hamburger always visible */
     .hamburger {
         display: block;
@@ -191,3 +192,31 @@ body {
         width: 250px;
     }
 }
+
+@media (max-width: 700px) {
+
+    /* shrink navbar so hamburger fits inside */
+    .navbar {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    /* shrink logo so it doesn't push everything out */
+    .nav-left img {
+        height: 50px;
+        margin-top: 0;
+    }
+
+    /* hamburger finally fits inside the navbar */
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        color: white;
+        z-index: 9999;
+    }
+}
+
