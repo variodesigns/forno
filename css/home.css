@@ -615,6 +615,12 @@ button,
     line-height: 1.2;       /* fixes height mismatch */
 }
 
+button,
+.secondary-button {
+    font-family: inherit;   /* NEW — forces both to use the same font */
+}
+
+
 /* HOVER STATE */
 button:hover,
 .secondary-button:hover {
