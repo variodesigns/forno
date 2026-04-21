@@ -366,6 +366,71 @@ html {
     }
 }
 
+/* PREMIUM BOOKING FORM */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 2px solid #c72a09;
+    background: #ffffff;
+    font-family: 'Give You Glory', cursive;
+    font-size: 1.3rem;
+    outline: none;
+    color: #c72a09;
+}
+
+.booking-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.booking-row input {
+    flex: 1;
+}
+
+/* BUTTON */
+.booking-btn {
+    background: #c72a09;
+    color: #ffffff;
+    font-family: 'Give You Glory', cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.booking-btn:hover {
+    background: #a62206;
+    transform: translateY(-2px);
+}
+
+/* MOBILE FIX */
+@media (max-width: 480px) {
+    .booking-form {
+        max-width: 90%;
+    }
+
+    .booking-row {
+        flex-direction: column;
+    }
+}
+
+
 /* CONTACT SECTION */
 .contact2-section {
     background: #c72a09;
