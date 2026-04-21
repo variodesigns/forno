@@ -48,7 +48,12 @@ body {
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
-    justify-self: end; /* right column */
+    display: block;
+    position: absolute;
+    right: 20px; /* was 40px */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
 }
 
 /* MOBILE NAV FIXES */
@@ -69,9 +74,9 @@ body {
         padding: 8px 18px;
     }
 
-    .hamburger {
-        font-size: 2.2rem;
-    }
+   .hamburger {
+    right: 15px; /* was 25px */
+    font-size: 2.2rem;
 }
 
 /* MOBILE MENU PANEL */
