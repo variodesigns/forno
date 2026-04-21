@@ -565,4 +565,58 @@ html {
     margin-top: 15px;
 }
 
+/* FORM CONTAINER */
+.container,
+.page-content {
+    max-width: 420px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
 
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #d4cfc9;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* FORM LAYOUT */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* BUTTONS — BOTH IDENTICAL */
+button,
+.secondary-button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #c72a09;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;              /* ensures perfect alignment */
+    line-height: 1.2;       /* fixes height mismatch */
+}
+
+/* HOVER STATE */
+button:hover,
+.secondary-button:hover {
+    background: #a02007;
+}

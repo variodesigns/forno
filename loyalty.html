@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORNO | Page Title</title>
+    <title>FORNO | Loyalty App</title>
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
@@ -54,13 +54,35 @@
     <a href="contact.html">Contact Us</a>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<!-- ================= PAGE CONTENT (REGISTER FORM INSERTED) ================= -->
+<section class="container">
 
-<!-- ================= PAGE CONTENT PLACEHOLDER ================= -->
-<section class="page-content">
-    <h2>Page Title</h2>
-    <p>This is your placeholder content. Replace this section with whatever you want for your new page.</p>
+    <h2><center>Register for your account</center></h2>
+
+    <form action="register_process.php" method="POST" class="register-form">
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <button type="submit" class="secondary-button">Create Account</button>
+
+        <br>
+        <a href="login.php" class="secondary-button">Already Registered? Login</a>
+
+    </form>
+
 </section>
-<!-- ============================================================ -->
+<!-- ======================================================================== -->
 
 
 <!-- ================= FOOTER ================= -->
