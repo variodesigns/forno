@@ -5,6 +5,10 @@ body {
     font-family: 'Give You Glory', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVBAR */
 .navbar {
     width: 100%;
@@ -196,7 +200,7 @@ body {
     background: #c72a09; /* same red as navbar */
     color: white;
     text-align: center;
-    padding: 80px 20px; /* top + bottom spacing */
+    padding: 20px 20px; /* top + bottom spacing */
 }
 
 .about-section h2 {
