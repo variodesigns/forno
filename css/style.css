@@ -18,6 +18,15 @@ body {
     gap: 20px;
 }
 
+@media (max-width: 600px) {
+    .intro-container {
+        transform: scale(0.75);
+        transform-origin: center top;
+        margin-top: 40px;
+    }
+}
+
+
 /* FORNO text */
 .forno-text {
     font-family: 'Give You Glory', cursive;
