@@ -181,3 +181,37 @@ body {
         width: 150px;
     }
 }
+
+@media (max-width: 700px) {
+
+    /* shrink the logo so it doesn't push everything off-screen */
+    .nav-left img {
+        height: 60px;
+        margin-top: 0;
+    }
+
+    /* remove the desktop shift that breaks mobile */
+    .nav-links {
+        transform: none;
+    }
+
+    /* ensure hamburger is visible */
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 3000;
+        margin-right: 10px;
+    }
+
+    /* keep social icons centred */
+    .nav-social {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* hide desktop links */
+    .nav-links {
+        display: none;
+    }
+}
+
