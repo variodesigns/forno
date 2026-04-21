@@ -265,14 +265,12 @@ html {
 .menu-section p {
     opacity: 0;
     transform: translateX(-60px);
-    transition: all 0.8s ease;
 }
 
 /* WHEN VISIBLE */
-.menu-section h2.visible {
-    opacity: 1;
-    transform: translateX(0);
-    animation: slideInRight 0.9s ease forwards;
+.menu-section h2 {
+    opacity: 0;
+    transform: translateX(60px);
 }
 
 .menu-section p.visible {
@@ -425,6 +423,14 @@ html {
     opacity: 0.8;
 }
 
+@media (max-width: 480px) {
+    .booking-widget-placeholder {
+        width: 95%;   /* slightly narrower */
+        padding: 30px 15px; /* optional: tighter padding for mobile */
+    }
+}
+
+
 /* CONTACT SECTION (RED BACKGROUND) */
 .contact2-section {
     background: #c72a09;
@@ -448,16 +454,14 @@ html {
 }
 
 /* CONTACT TEXT ANIMATION (HIDDEN STATE) */
-.contact2-section h2 {
+.contact2-section p {
     opacity: 0;
-    transform: translateX(60px);
-    transition: all 0.8s ease;
+    transform: translateX(-60px);
 }
 
 .contact2-section p {
     opacity: 0;
     transform: translateX(-60px);
-    transition: all 0.8s ease;
 }
 
 /* WHEN VISIBLE */
@@ -522,6 +526,14 @@ html {
     background: #f5f5f5;
     transform: translateY(-2px);
 }
+
+@media (max-width: 480px) {
+    .contact2-form input,
+    .contact2-form textarea {
+        width: 95%;   /* slightly narrower */
+    }
+}
+
 
 /* FOOTER SECTION */
 .forno-footer {
