@@ -39,7 +39,8 @@
         <a href="#about">About Us</a>
         <a href="#menus">Menu</a>
         <a href="#gallery">Gallery</a>
-        <a href="#">Contact Us</a>
+        <a href="#booking">Reservations</a>
+        <a href="#contact2">Contact Us</a>
     </div>
 
     <section class="hero-slideshow">
@@ -98,6 +99,42 @@
     </div>
 </section>
 
+    <section class="booking-section" id="booking">
+    <h2>Make a Booking</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+
+    <div class="booking-widget-placeholder">
+        Reservation Widget Placeholder
+    </div>
+</section>
+
+<section class="contact2-section" id="contact2">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <form class="contact2-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Contact Number" required>
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="contact2-btn">Send Message</button>
+    </form>
+</section>
+
+<footer class="forno-footer">
+    <p>Forno Restaurant, 123 Main Street, London, N8 7RF</p>
+    <p>Telephone: 0207 1234567</p>
+    <p>Email: hello@fornorestaurant.co.uk</p>
+
+    <p>© Copyright of Forno Restaurant</p>
+
+    <p>Site Designed and Managed by Vario Designs</p>
+
+    <img src="variologo.png" alt="Vario Designs Logo" class="vario-footer-logo">
+</footer>
 
 
     <script src="js/home.js"></script>
@@ -136,8 +173,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const menuHeader = document.querySelector(".menu-section h2");
         const menuParagraph = document.querySelector(".menu-section p");
 
-        [menuHeader, menuParagraph].forEach((el) => {
-            if (!el.classList.contains("visible")) {
+        const contactHeader = document.querySelector(".contact2-section h2");
+        const contactParagraph = document.querySelector(".contact2-section p");
+
+        const targets = [
+            menuHeader,
+            menuParagraph,
+            contactHeader,
+            contactParagraph
+        ];
+
+        targets.forEach((el) => {
+            if (el && !el.classList.contains("visible")) {
                 const rect = el.getBoundingClientRect();
                 if (rect.top < triggerPoint) {
                     el.classList.add("visible");

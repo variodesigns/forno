@@ -258,13 +258,13 @@ html {
 /* MENU SECTION ANIMATION (HIDDEN STATE) */
 .menu-section h2 {
     opacity: 0;
-    transform: translateX(60px); /* match slideInRight */
+    transform: translateX(60px);
     transition: all 0.8s ease;
 }
 
 .menu-section p {
     opacity: 0;
-    transform: translateX(-60px); /* match slideInLeft */
+    transform: translateX(-60px);
     transition: all 0.8s ease;
 }
 
@@ -308,7 +308,7 @@ html {
     background: #c72a09;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 20px 20px;
 }
 
 .gallery-section h2 {
@@ -389,4 +389,154 @@ html {
     .gallery-arrow {
         font-size: 2.4rem;
     }
+}
+
+/* BOOKING SECTION */
+.booking-section {
+    background: #e4e2dd;
+    color: #c72a09;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.booking-section h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    font-family: 'Give You Glory', cursive;
+}
+
+.booking-section p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-family: 'Give You Glory', cursive;
+}
+
+.booking-widget-placeholder {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border: 2px dotted #c72a09;
+    border-radius: 10px;
+    font-family: 'Give You Glory', cursive;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+/* CONTACT SECTION (RED BACKGROUND) */
+.contact2-section {
+    background: #c72a09;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.contact2-section h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    font-family: 'Give You Glory', cursive;
+}
+
+.contact2-section p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-family: 'Give You Glory', cursive;
+}
+
+/* CONTACT TEXT ANIMATION (HIDDEN STATE) */
+.contact2-section h2 {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.8s ease;
+}
+
+.contact2-section p {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s ease;
+}
+
+/* WHEN VISIBLE */
+.contact2-section h2.visible {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideInRight 0.9s ease forwards;
+}
+
+.contact2-section p.visible {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideInLeft 0.9s ease forwards;
+    animation-delay: 0.2s;
+}
+
+/* CONTACT FORM */
+.contact2-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact2-form input,
+.contact2-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Give You Glory', cursive;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.contact2-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+/* SEND MESSAGE BUTTON */
+.contact2-btn {
+    background: #ffffff;
+    color: #c72a09;
+    font-family: 'Give You Glory', cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact2-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+/* FOOTER SECTION */
+.forno-footer {
+    background: #e4e2dd;
+    color: #c72a09;
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Give You Glory', cursive;
+}
+
+.forno-footer p {
+    margin: 8px 0;
+    font-size: 1.3rem;
+}
+
+.vario-footer-logo {
+    height: 40px;
+    width: auto;
+    margin-top: 15px;
 }
