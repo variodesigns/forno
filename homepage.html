@@ -122,34 +122,18 @@
     <section class="booking-section" id="booking">
     <h2>Make a Booking</h2>
     <p>
-        Fill in the form below and submit your booking request, if a table is available you will receive a booking email confirmation.
+        Fill in the form below and submit your booking request. If a table is available you will receive a booking email confirmation.
     </p>
 
-    <div class="booking-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="tel" placeholder="Contact Number" required>
-
-    <div class="booking-row">
-        <input type="text" placeholder="Which date?">
-        <input type="text" placeholder="What time?">
-
+    <div class="booking-widget-container">
+        <iframe 
+            src="https://www.variodesigns.co.uk/reservations/forno/widget.php"
+            style="width:100%; max-width:500px; height:650px; border:0; border-radius:12px; overflow:hidden;"
+            loading="lazy">
+        </iframe>
     </div>
-
-    <select required>
-        <option value="" disabled selected>Party Size</option>
-        <option>1 person</option>
-        <option>2 people</option>
-        <option>3 people</option>
-        <option>4 people</option>
-        <option>5 people</option>
-        <option>6 people</option>
-    </select>
-
-    <button class="booking-btn">Book a Table</button>
-</div>
-
 </section>
+
 
 <section class="contact2-section" id="contact2">
     <h2>Contact Us</h2>
