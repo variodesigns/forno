@@ -127,13 +127,23 @@
 
     <div class="booking-widget-container">
         <iframe 
-            src="https://www.variodesigns.co.uk/reservations/forno/widget.php"
-            style="width:100%; max-width:650px; height:800px; border:0; border-radius:12px; overflow:hidden;"
-            loading="lazy">
-        </iframe>
+    id="forno-widget"
+    src="https://www.variodesigns.co.uk/reservations/forno/widget.php"
+    style="width:100%; max-width:500px; height:700px; border:0; border-radius:12px; overflow:hidden;"
+    loading="lazy">
+</iframe>
+
     </div>
 </section>
 
+<script>
+    window.addEventListener("message", function(event) {
+        if (event.data.widgetHeight) {
+            const iframe = document.querySelector("#forno-widget");
+            iframe.style.height = event.data.widgetHeight + "px";
+        }
+    });
+</script>
 
 <section class="contact2-section" id="contact2">
     <h2>Contact Us</h2>
